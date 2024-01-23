@@ -1,0 +1,189 @@
+ /* Style généraux universel */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.logo {
+    
+    width: 100px;
+    height: 100px;
+}
+
+.Nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(81, 75, 75);
+    padding: 5px 40px;
+    box-shadow: 0 5px 15px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#Topmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Topmenu li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+#Topmenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#Topmenu li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    display: block;
+    margin-left: 0px;
+    transition: 0.6s;
+}
+
+#Topmenu li:hover::after{
+    width: 60%;
+}
+/* Image header et boutton */
+.header {
+    background-image: url(750x500-header-banner-men-luxury-shoes-0823-m.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.header h1 {
+    color: white;
+}
+
+.header h3 {
+    color:rgb(113, 57, 57);
+    font-weight: bold;
+    margin-right: 20px;
+    padding-left: 110px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 130px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid rgb(174, 22, 22);
+    transition: 0,9s;
+}
+
+/* section chaussures modéle */
+
+h2 {
+    text-align: center;
+    color:rgb(113, 57, 57);
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(55, 23, 39);
+    font-size: 30px;
+}
+/* section chaussures richelieur, mocassins ,monk */
+.ChaussuresModele {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    height: 550px;
+
+}
+
+.ChaussuresModele img {
+    width: 400px;
+    height: 400px;
+    max-height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    border: 3px solid rgb(70, 28, 5);
+}
+
+.ChaussuresModele p {
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.row {
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+.btnchaussures {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgb(31, 20, 20);
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin:auto;
+    background-color: rgb(46, 13, 13);
+    cursor: pointer;
+}
+
+.ChaussuresModele h3 {
+    margin-top: -50px;
+    color: rgb(20, 17, 17);
+    font-weight: bold;
+}
+/* section service apres vente */
